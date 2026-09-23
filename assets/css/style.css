@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p, a, li, h6
+{
+	color: #304055;
+	font-size: 0.9rem;
+	font-family: helvetica, arial, tahoma, sans-serif;
+}
+
+/* Style the header */
+.header {
+  position: relative;
+  background-color: #fafafa;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 a
+{
+	display:block;
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 2.45em;
+	outline: none;
+	clear: both;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0px; /* the offset */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(200,200,200);
+  color: black;
+}
+
+/* Formatted for RWD - full width banner */
+.baner img {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+	}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* added by me - in the next instruction to completed*/ 
+footer
+{
+	position: relative;
+}
+
+footer ul
+{
+	overflow: hidden;
+	margin: 0px 0px 5px 0px;
+	clear: both;
+	list-style: none;
+	background-color: #f5f5f5;
+	border: 1px solid #e0e0e0;
+}
+footer ul li
+{
+	float: left;
+    width: 33.33%;
+    padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+footer ul li .center
+{
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.copyright
+{
+	text-align: center;
+}
+
+#map{
+	width: 100%;
+}
+
+/* Create two equal columns that floats next to each other */
+.article {
+  float: left;
+  width: 30%;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+#right {
+  float: left;
+  width: 40%;
+  padding-top: 15px;
+  /* padding-right: 25px;*/
+  padding-left: 25px;
+}
+
+.title {
+	font-weight: bolder;
+}
+
+aside img{
+  float: left;
+  width: 100%;
+  padding-top: 5px;
+  padding-right: 25px;
+}
+.galeria {
+	min-width: 350px;
+}
+
+#realisations {
+  display: block;
+  color: #3f3f3f;
+  text-align: center;
+}
+#realisations img {
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* stop added by me */
+
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:link {
+  color: blue;
+}
+input:focus {
+  border-color: green;
+}
+
+
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack 
+on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column, .article, .contact, .center, .right {
+    width: 100%; 
+  }
+}
